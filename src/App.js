@@ -10,6 +10,7 @@ import NotistackProvider from './components/NotistackProvider';
 import ThemePrimaryColor from './components/ThemePrimaryColor';
 import ThemeLocalization from './components/ThemeLocalization';
 import LoadingScreen, { ProgressBarStyle } from './components/LoadingScreen';
+// eslint-disable-next-line no-unused-vars
 import firebase from './FirebaseConfig'
 // ----------------------------------------------------------------------
 
