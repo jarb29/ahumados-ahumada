@@ -27,18 +27,34 @@ export default function LandingForm(props) {
     defaultValues
   });
 
-  const onSubmit = async (data) => {
-    await new Promise((resolve) => setTimeout(resolve, 500));
+  // const onSubmit = async (data) => {
+  //   await new Promise((resolve) => setTimeout(resolve, 500));
+  //   alert(
+  //     JSON.stringify(
+  //       {
+  //         ...data,
+  //         draftEditor: draftToHtml(convertToRaw(data.draftEditor.getCurrentContent()))
+  //       },
+  //       null,
+  //       2
+  //     )
+  //   );
+  //   reset();
+  //   props.onClose(false)
+  // };
+
+  const onSubmit = (d) => {
+    let data = {
+      fullname: d.fullName,
+      email: d.email, 
+      draftEditor: draftToHtml(convertToRaw(d.draftEditor.getCurrentContent()))
+    }
+
     alert(
-      JSON.stringify(
-        {
-          ...data,
-          draftEditor: draftToHtml(convertToRaw(data.draftEditor.getCurrentContent()))
-        },
-        null,
-        2
-      )
-    );
+      JSON.stringify({...data}, null, 2)
+    )
+    // emailjs.sendForm("service_41mjh6b", "service_41mjh6b", d)
+    
     reset();
     props.onClose(false)
   };
