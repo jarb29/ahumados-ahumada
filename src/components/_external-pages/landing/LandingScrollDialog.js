@@ -47,7 +47,7 @@ export default function LandingScrollDialog(props) {
         <DialogContent dividers={scroll === 'paper'}>
           <DialogContentText id="scroll-dialog-description" ref={descriptionElementRef} tabIndex={-1}>
             {/* <LandingForm onClose = {handleCloseComponent}/> */}
-            <ContactUs />
+            <ContactUs onClose = {handleCloseComponent}/>/>
           </DialogContentText>
         </DialogContent>
       </Dialog>

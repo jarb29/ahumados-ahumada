@@ -14,7 +14,7 @@ import { DraftEditor } from '../../editor';
 
 
 
-export default function ContactUs() {
+export default function ContactUs(props) {
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -33,7 +33,7 @@ export default function ContactUs() {
       console.log(error.text);
     });
 
-
+    props.onClose(false)
   };
 
   return (
