@@ -33,8 +33,8 @@ export const FormSchema = Yup.object().shape({
 
   draftEditor: Yup.mixed().test(
     'max text',
-    'Debe tener mas de 50 caracteres',
-    (value) => value && value.getCurrentContent().getPlainText('\u0001').length > 50
+    'Debe tener mas de 25 caracteres',
+    (value) => value && value.getCurrentContent().getPlainText('\u0001').length > 25
   )
 });
 

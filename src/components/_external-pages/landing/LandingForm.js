@@ -1,4 +1,5 @@
 import draftToHtml from 'draftjs-to-html';
+import emailjs from 'emailjs-com';
 import { convertToRaw } from 'draft-js';
 import { useForm, Controller } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
@@ -43,17 +44,42 @@ export default function LandingForm(props) {
   //   props.onClose(false)
   // };
 
-  const onSubmit = (d) => {
-    let data = {
-      fullname: d.fullName,
-      email: d.email, 
-      draftEditor: draftToHtml(convertToRaw(d.draftEditor.getCurrentContent()))
-    }
 
-    alert(
-      JSON.stringify({...data}, null, 2)
-    )
-    // emailjs.sendForm("service_41mjh6b", "service_41mjh6b", d)
+
+  // const sendEmail = (e) => {
+  //   e.preventDefault();
+
+  //   emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_USER_ID')
+  //     .then((result) => {
+  //         console.log(result.text);
+  //     }, (error) => {
+  //         console.log(error.text);
+  //     });
+  // };
+
+
+
+  const onSubmit = (e) => {
+    // e.preventDefault();
+
+    console.log(e.target, "the arget")
+    let data = {
+      fullname: e.fullName,
+      email: e.email, 
+      draftEditor: draftToHtml(convertToRaw(e.draftEditor.getCurrentContent()))
+    }
+    console.log(data)
+
+
+    emailjs.sendForm("service_41mjh6b", "template_bwx31in", data, "user_2zG6im6TENNbVxBlXKG77")
+    .then((result) => {
+      console.log(result.text);
+      alert(
+        JSON.stringify({...data}, null, 2)
+        )
+    }).catch(error => {
+      console.log(error.text);
+    });
     
     reset();
     props.onClose(false)
