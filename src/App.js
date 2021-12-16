@@ -17,7 +17,7 @@ import firebase from './FirebaseConfig'
 require('dotenv').config()
 export default function App() {
   const { isInitialized } = useAuth();
-
+  
   return (
     <ThemeConfig>
       <ThemePrimaryColor>
