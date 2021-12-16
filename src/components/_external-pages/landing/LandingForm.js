@@ -4,6 +4,9 @@ import { convertToRaw } from 'draft-js';
 import { useForm, Controller } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 
+import FirebaseFirestoreService from "./FirebaseFirestoreService";
+
+
 // material
 import { Stack, TextField, Typography, FormHelperText } from '@mui/material';
 import { LoadingButton } from '@mui/lab';
@@ -14,7 +17,6 @@ import { DraftEditor } from '../../editor';
 import { FormSchema, defaultValues } from './form';
 
 // ----------------------------------------------------------------------
-
 
 
 export default function LandingForm(props) {
@@ -28,6 +30,20 @@ export default function LandingForm(props) {
     resolver: yupResolver(FormSchema),
     defaultValues
   });
+
+  const add = async function(data) {
+    try {
+      
+      const response = await FirebaseFirestoreService.createDocument(
+        "pedidos",
+        data);
+      console.log(response, "inside")
+      console.log(response.id);
+      alert(`creado ${response.id}`);
+    } catch(error) {
+      alert(error.message);
+    }
+  }
 
   const onSubmit = (e) => {
     let data = {
@@ -45,10 +61,12 @@ export default function LandingForm(props) {
         `Su mensaje no pudo ser enviado, ${error}`
         )
     });
-  
     reset();
     props.onClose(false)
+    add(data)
   };
+  
+
 
 
 

@@ -1,5 +1,6 @@
 // routes
 import Router from './routes';
+
 // theme
 import ThemeConfig from './theme';
 import GlobalStyles from './theme/globalStyles';
@@ -13,7 +14,7 @@ import LoadingScreen, { ProgressBarStyle } from './components/LoadingScreen';
 // eslint-disable-next-line no-unused-vars
 import firebase from './FirebaseConfig'
 // ----------------------------------------------------------------------
-
+require('dotenv').config()
 export default function App() {
   const { isInitialized } = useAuth();
 
