@@ -34,7 +34,7 @@ export default function LandingForm(props) {
   const add = async function(data) {
     try {
       
-      const response = await FirebaseFirestoreService.createDocument(
+      await FirebaseFirestoreService.createDocument(
         "pedidos",
         data);
     } catch(error) {
