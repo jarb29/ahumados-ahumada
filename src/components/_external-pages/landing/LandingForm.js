@@ -37,9 +37,6 @@ export default function LandingForm(props) {
       const response = await FirebaseFirestoreService.createDocument(
         "pedidos",
         data);
-      console.log(response, "inside")
-      console.log(response.id);
-      alert(`creado ${response.id}`);
     } catch(error) {
       alert(error.message);
     }
@@ -54,7 +51,7 @@ export default function LandingForm(props) {
     emailjs.send("service_41mjh6b", "template_bwx31in", data, "user_2zG6im6TENNbVxBlXKG77")
     .then((result) => {
       alert(
-        `Mensaje enviado, ${result.text}, ${result.status}`
+        `Su mennsaje a sido enviado, ${result.text}`
         )
     }).catch(error => {
       alert(
