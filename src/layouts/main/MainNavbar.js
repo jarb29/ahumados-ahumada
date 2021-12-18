@@ -61,8 +61,10 @@ export default function MainNavbar() {
           }}
         >
           <Label 
-          sx={{ ml: 10, 
-          paddingTop: '30px'}}>
+          sx={{ 
+            ml: 10, 
+            paddingTop: '15px'
+            }}>
             <LogoI />
           </Label>
           <LandingScrollDialog num={2} />

@@ -27,7 +27,7 @@ const ImgStyle = styled('img')(({ theme }) => ({
   top: 1,
   width: '90%',
   height: '90%',
-  objectFit: 'cover',
+  objectFit: 'fill',
   position: 'center',
   transition: theme.transitions.create('all')
 }));
@@ -40,6 +40,7 @@ function LogoImage() {
     <Paper
       sx={{
         mx: -11,
+        height: 45,
         borderRadius: 1,
         overflow: 'hidden',
         paddingTop: 'calc(0.3/9 * 100%)',
