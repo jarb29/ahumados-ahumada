@@ -60,9 +60,8 @@ export default function MainNavbar() {
             justifyContent: 'space-between',
           }}
         >
-          <Label color="info" 
+          <Label 
           sx={{ ml: 10, 
-          padding:2, 
           paddingTop: '30px'}}>
             <LogoI />
           </Label>
