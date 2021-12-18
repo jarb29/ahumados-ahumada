@@ -53,6 +53,7 @@ export default function LandingForm(props) {
       alert(
         `Su mensaje a sido enviado, ${result.text}`
         )
+        return result
     }).catch(error => {
       alert(
         `Su mensaje no pudo ser enviado, ${error}`
