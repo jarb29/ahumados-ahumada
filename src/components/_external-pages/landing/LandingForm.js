@@ -51,7 +51,7 @@ export default function LandingForm(props) {
     emailjs.send("service_41mjh6b", "template_bwx31in", data, "user_2zG6im6TENNbVxBlXKG77")
     .then((result) => {
       alert(
-        `Su mennsaje a sido enviado, ${result.text}`
+        `Su mensaje a sido enviado, ${result.text}`
         )
     }).catch(error => {
       alert(
