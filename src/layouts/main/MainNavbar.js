@@ -68,7 +68,6 @@ export default function MainNavbar() {
           <LandingScrollDialog num={2} />
         </Container>
       </ToolbarStyle>
-
       {isOffset && <ToolbarShadowStyle />}
     </AppBar>
   );

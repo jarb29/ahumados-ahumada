@@ -3,7 +3,6 @@ import { useState, useRef, useEffect } from 'react';
 
 import { Button, Dialog, DialogTitle, DialogContent, DialogContentText } from '@mui/material';
 import LandingForm from './LandingForm';
-// import ContactUs from './ContactUs'
 // ----------------------------------------------------------------------
 export default function LandingScrollDialog(props) {
   const [open, setOpen] = useState(false);
@@ -46,7 +45,6 @@ export default function LandingScrollDialog(props) {
         <DialogContent dividers={scroll === 'paper'}>
           <DialogContentText id="scroll-dialog-description" ref={descriptionElementRef} tabIndex={-1}>
             <LandingForm onClose = {handleCloseComponent}/>
-            {/* <ContactUs onClose = {handleCloseComponent}/>/> */}
           </DialogContentText>
         </DialogContent>
       </Dialog>

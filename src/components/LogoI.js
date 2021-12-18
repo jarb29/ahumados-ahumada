@@ -39,7 +39,7 @@ function LogoImage() {
   return (
     <Paper
       sx={{
-        mx: -10,
+        mx: -11,
         borderRadius: 1,
         overflow: 'hidden',
         paddingTop: 'calc(0.3/9 * 100%)',
