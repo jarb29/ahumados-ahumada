@@ -15,7 +15,7 @@ const RootStyle = styled(Page)(({ theme }) => ({
 
 export default function LandingCarouselCenter() {
   return (
-    <RootStyle title="Components: Carousel | Minimal-UI">
+    <RootStyle title="Ahumados Ahumada">
       <Container maxWidth="lg">
         <Grid container spacing={3}>
           <Grid item xs={12}>

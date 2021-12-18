@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import { alpha, styled, useTheme } from '@mui/material/styles';
 import { Box, GlobalStyles } from '@mui/material';
 //
-import Logo from './Logo';
+import LogoI from './LogoI';
 
 // ----------------------------------------------------------------------
 
@@ -85,7 +85,7 @@ export default function LoadingScreen({ ...other }) {
             repeat: Infinity
           }}
         >
-          <Logo sx={{ width: 64, height: 64 }} />
+          <LogoI sx={{ width: 64, height: 64 }} />
         </motion.div>
 
         <Box

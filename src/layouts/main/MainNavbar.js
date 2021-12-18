@@ -1,11 +1,10 @@
-import { Link as RouterLink } from 'react-router-dom';
 // material
 import { styled } from '@mui/material/styles';
-import { Box, AppBar, Toolbar, Container } from '@mui/material';
+import { AppBar, Toolbar, Container } from '@mui/material';
 // hooks
 import useOffSetTop from '../../hooks/useOffSetTop';
 // components
-import Logo from '../../components/Logo';
+import LogoI from '../../components/LogoI';
 import Label from '../../components/Label';
 import LandingScrollDialog from '../../components/_external-pages/landing/LandingScrollDialog';
 // ----------------------------------------------------------------------
@@ -58,16 +57,15 @@ export default function MainNavbar() {
           sx={{
             display: 'flex',
             alignItems: 'center',
-            justifyContent: 'space-between'
+            justifyContent: 'space-between',
           }}
         >
-          <RouterLink to="/">
-            <Logo />
-          </RouterLink>
-          <Label color="info" sx={{ ml: 1 }}>
-            Ahumada
+          <Label color="info" 
+          sx={{ ml: 10, 
+          padding:2, 
+          paddingTop: '30px'}}>
+            <LogoI />
           </Label>
-          <Box sx={{ flexGrow: 1 }} />
           <LandingScrollDialog num={2} />
         </Container>
       </ToolbarStyle>

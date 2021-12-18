@@ -3,7 +3,7 @@ import { useLocation, Outlet } from 'react-router-dom';
 // material
 import { Box, Link, Container, Typography } from '@mui/material';
 // components
-import Logo from '../../components/Logo';
+import LogoI from '../../components/LogoI';
 //
 import MainNavbar from './MainNavbar';
 import MainFooter from './MainFooter';
@@ -34,7 +34,7 @@ export default function MainLayout() {
         >
           <Container maxWidth="lg">
             <ScrollLink to="move_top" spy smooth>
-              <Logo sx={{ mb: 1, mx: 'auto', cursor: 'pointer' }} />
+              <LogoI sx={{ mb: 1, mx: 'auto', cursor: 'pointer' }} />
             </ScrollLink>
 
             <Typography variant="caption" component="p">
