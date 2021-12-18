@@ -82,7 +82,7 @@ export default function LandingHero() {
             </motion.div>
 
             <motion.div variants={varFadeInRight}>
-              <Typography sx={{ color: 'common.white' }}>El sabor de tu hogar. Atrevete a probarnos.</Typography>
+              <Typography sx={{ color: 'common.white' }}>El sabor en tú hogar. Atrevete a probarnos.</Typography>
             </motion.div>
 
             <motion.div variants={varFadeInRight}>
