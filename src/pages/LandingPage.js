@@ -10,7 +10,7 @@ import {
   LandingHero,
   LandingMinimal,
   LandingAdvertisement,
-  LandingCleanInterfaces,
+  // LandingCleanInterfaces,
   LandingHugePackElements,
   LandingCarouselCenter
 } from '../components/_external-pages/landing';
@@ -39,7 +39,7 @@ export default function LandingPage() {
         <LandingHugePackElements />
         <br />
         <LandingAdvertisement />
-        <LandingCleanInterfaces />
+        {/* <LandingCleanInterfaces /> */}
         <LandingCarouselCenter />
       </ContentStyle>
     </RootStyle>

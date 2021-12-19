@@ -8,17 +8,17 @@ import { varFadeInUp, MotionInView, varFadeInDown } from '../../animate';
 
 const CARDS = [
   {
-    icon: '/static/icons/ic_design.svg',
+    icon: '/static/ahumados/foto2.jpeg',
     title: 'Costillar',
     description: 'Delicioso costillar ahumado por 8 horas.'
   },
   {
-    icon: '/static/icons/ic_code.svg',
+    icon: '/static/ahumados/foto3.jpeg',
     title: 'Brisket',
     description: 'Delicioso costillar ahumado por 8 horas.'
   },
   {
-    icon: '/static/brand/logo_single.svg',
+    icon: '/static/ahumados/foto4.jpeg',
     title: 'Pernil',
     description: 'Delicioso costillar ahumado por 8 horas.'
   }
@@ -79,10 +79,10 @@ const CardStyle = styled(Card)(({ theme }) => {
 });
 
 const CardIconStyle = styled('img')(({ theme }) => ({
-  width: 40,
-  height: 40,
+  width: 220,
+  height: 220,
   margin: 'auto',
-  marginBottom: theme.spacing(10),
+  marginBottom: theme.spacing(2),
   filter: shadowIcon(theme.palette.primary.main)
 }));
 

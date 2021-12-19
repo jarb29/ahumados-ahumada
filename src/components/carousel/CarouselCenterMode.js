@@ -14,10 +14,11 @@ import { CarouselControlsArrowsBasic2 } from './controls';
 
 // ----------------------------------------------------------------------
 
-const MOCK_CAROUSELS = [...Array(5)].map((_, index) => ({
+let tit = ["Costillar", "Brisket", "Pernil"]
+const MOCK_CAROUSELS = [...Array(4)].map((_, index) => ({
   id: mockData.id(index),
-  title: mockData.text.title(index),
-  image: mockData.image.feed(index),
+  title: (index+1=== 1|index+1=== 4)? tit[0]:(index+1===2)? tit[1]:tit[2],
+  image: `/static/ahumada/foto${index + 1}.jpeg`,
   description: mockData.text.description(index)
 }));
 
