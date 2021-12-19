@@ -1,12 +1,12 @@
 import { useRef } from 'react';
 import Slider from 'react-slick';
 import PropTypes from 'prop-types';
-import { Icon } from '@iconify/react';
-import { Link as RouterLink } from 'react-router-dom';
-import arrowForwardFill from '@iconify/icons-eva/arrow-forward-fill';
+// import { Icon } from '@iconify/react';
+// import { Link as RouterLink } from 'react-router-dom';
+// import arrowForwardFill from '@iconify/icons-eva/arrow-forward-fill';
 // material
 import { alpha, useTheme, styled } from '@mui/material/styles';
-import { Box, Paper, Link, Typography, CardContent } from '@mui/material';
+import {  Paper, Typography, CardContent } from '@mui/material';
 // utils
 import mockData from '../../utils/mock-data';
 //
@@ -94,7 +94,7 @@ function CarouselItem({ item }) {
         <Typography variant="h4" paragraph>
           {title}
         </Typography>
-        <Link
+        {/* <Link
           to="#"
           color="inherit"
           variant="overline"
@@ -109,7 +109,7 @@ function CarouselItem({ item }) {
         >
           learn More
           <Box component={Icon} icon={arrowForwardFill} sx={{ width: 16, height: 16, ml: 1 }} />
-        </Link>
+        </Link> */}
       </CardContent>
     </Paper>
   );
