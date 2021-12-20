@@ -11,7 +11,7 @@ import { Grid, Link, Divider, Container, Typography, IconButton, Stack } from '@
 // routes
 import { PATH_PAGE } from '../../routes/paths';
 //
-import Logo from '../../components/Logo';
+import LogoI from '../../components/LogoI';
 
 // ----------------------------------------------------------------------
 
@@ -66,7 +66,7 @@ export default function MainFooter() {
         >
           <Grid item xs={12} sx={{ mb: 3 }}>
             <ScrollLink to="move_top" spy smooth>
-              <Logo sx={{ mx: { xs: 'auto', md: 'inherit' } }} />
+              <LogoI sx={{ mx: { xs: 'auto', md: 'inherit' } }} />
             </ScrollLink>
           </Grid>
           <Grid item xs={8} md={3}>

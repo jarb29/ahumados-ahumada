@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { Editor } from 'react-draft-wysiwyg';
 //
-import { toolbarFull, toolbarSimple } from './DraftEditorToolbar';
+import { toolbarSimple } from './DraftEditorToolbar';
 import DraftEditorStyle from './DraftEditorStyle';
 
 // ----------------------------------------------------------------------
