@@ -23,7 +23,7 @@ export default function DraftEditor({ simple = false, error, sx, ...other }) {
       }}
     >
       <div type="message" name="message">
-        <Editor  toolbar={simple ? toolbarSimple : toolbarFull} placeholder="Pedidos y comentarios..." {...other} />
+        <Editor  toolbar={toolbarSimple} placeholder="Pedidos y comentarios..." {...other} />
       </div>
     </DraftEditorStyle>
   );
