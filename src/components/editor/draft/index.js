@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { Editor } from 'react-draft-wysiwyg';
 //
-import { toolbarFull } from './DraftEditorToolbar';
+import { toolbarSimple } from './DraftEditorToolbar';
 import DraftEditorStyle from './DraftEditorStyle';
 
 // ----------------------------------------------------------------------
@@ -23,7 +23,7 @@ export default function DraftEditor({ simple = false, error, sx, ...other }) {
       }}
     >
       <div type="message" name="message">
-        <Editor  toolbar={toolbarFull} placeholder="Pedidos y comentarios..." {...other} />
+        <Editor  toolbar={toolbarSimple} placeholder="Pedidos y comentarios..." {...other} />
       </div>
     </DraftEditorStyle>
   );

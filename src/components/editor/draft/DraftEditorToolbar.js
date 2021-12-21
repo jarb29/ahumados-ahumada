@@ -97,7 +97,7 @@ export const toolbarFull = {
 
 export const toolbarSimple = {
   ...toolbarFull,
-  options: ['inline', 'blockType', 'list', 'textAlign'],
+  options: ['inline', 'blockType', 'list', 'textAlign', 'link', 'image', 'remove'],
   inline: {
     ...toolbarFull.inline,
     options: ['bold', 'italic', 'underline']
