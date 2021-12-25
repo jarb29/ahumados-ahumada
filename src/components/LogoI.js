@@ -51,7 +51,7 @@ function LogoImage() {
         }
       }}
     >
-         <ImgStyle alt={"Logo"} src="/static/ahumados/logo.png" />
+         <ImgStyle alt={"Logo"} src="/static/ahumados/logoI.png" />
     </Paper>
   );
 }
