@@ -46,8 +46,8 @@ function LogoImage() {
         paddingTop: 'calc(0.3/9 * 100%)',
         position: 'relative',
         '&:hover img': {
-          width: '110%',
-          height: '110%'
+          width: '100%',
+          height: '100%'
         }
       }}
     >
