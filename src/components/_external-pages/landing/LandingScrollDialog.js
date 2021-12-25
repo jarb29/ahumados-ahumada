@@ -33,7 +33,11 @@ export default function LandingScrollDialog(props) {
   const words = ['Encargos', 'Pedidos', 'Contactanos'];
   return (
     <div>
-      <Button onClick={handleClickOpen('paper')} size="large" variant="contained">
+      <Button 
+      onClick={handleClickOpen('paper')} 
+      size="large" 
+      variant="contained"
+      >
         {
           // eslint-disable-next-line
         words[props.num]
