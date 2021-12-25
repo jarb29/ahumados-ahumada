@@ -25,8 +25,8 @@ export default function LogoI({ sx }) {
 // ----------------------------------------------------------------------
 const ImgStyle = styled('img')(({ theme }) => ({
   top: 1,
-  width: '90%',
-  height: '90%',
+  width: '95%',
+  height: '95%',
   objectFit: 'fill',
   position: 'center',
   transition: theme.transitions.create('all')
@@ -46,8 +46,8 @@ function LogoImage() {
         paddingTop: 'calc(0.3/9 * 100%)',
         position: 'relative',
         '&:hover img': {
-          width: '100%',
-          height: '100%'
+          width: '110%',
+          height: '110%'
         }
       }}
     >
