@@ -11,7 +11,8 @@ const PRIMARY_COLOR = [
   // DEFAULT
   {
     name: 'default',
-    ...palette.light.primary
+    ...palette.light.primary,
+    
   },
   {
     name: 'orange',
