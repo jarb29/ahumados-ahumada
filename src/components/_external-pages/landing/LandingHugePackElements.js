@@ -86,14 +86,14 @@ export default function LandingHugePackElements() {
             <ContentStyle>
               <MotionInView variants={varFadeInUp}>
                 <Typography component="p" variant="overline" sx={{ mb: 2, color: 'text.secondary' }}>
-                  Atrevete a probarnos
+                  Como Comprar
                 </Typography>
               </MotionInView>
 
               <MotionInView variants={varFadeInUp}>
                 <Typography variant="h2" sx={{ mb: 3 }}>
                   Productos solo <br />
-                  por Encargo
+                  por Encargo.
                 </Typography>
               </MotionInView>
 
@@ -104,7 +104,7 @@ export default function LandingHugePackElements() {
                     color: isLight ? 'text.secondary' : 'common.white'
                   }}
                 >
-                  Despachamos Lunes, Miercoles, Viernes
+                  Llenar y enviar la planilla de contacto. Posterior a eso nos comunicaremos con usted para contestar cualquier inquietud. 
                 </Typography>
               </MotionInView>
             </ContentStyle>

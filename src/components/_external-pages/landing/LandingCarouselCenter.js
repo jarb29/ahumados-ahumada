@@ -20,7 +20,7 @@ export default function LandingCarouselCenter() {
         <Grid container spacing={3}>
           <Grid item xs={12}>
             <Card>
-              <CardHeader title="Aprende Sobre Nuestros Productos" />
+              <CardHeader title="Nuestros clientes disfrutando" />
               <CardContent>
                 <CarouselCenterMode />
               </CardContent>

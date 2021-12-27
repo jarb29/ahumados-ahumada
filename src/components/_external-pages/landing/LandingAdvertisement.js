@@ -51,8 +51,8 @@ export default function LandingAdvertisement() {
           <MotionInView variants={varFadeInDown} sx={{ color: 'common.white', mb: 5 }}>
             <Typography variant="h2">
               Para encargos
-              <br /> llenar planilla
-              <br /> de contacto
+              <br /> favor hacer clic en 
+              <br /> Pedidos.
             </Typography>
           </MotionInView>
           <MotionInView variants={varFadeInDown}>

@@ -80,9 +80,14 @@ export default function LandingHero() {
                 </Typography>
               </Typography>
             </motion.div>
-
+            {/* <motion.div variants={varFadeInRight}>
+              <Typography variant="h3" sx={{ color: 'primary.main' }}>El sabor en tú hogar</Typography>
+            </motion.div> */}
             <motion.div variants={varFadeInRight}>
-              <Typography sx={{ color: 'common.white' }}>El sabor en tú hogar. Atrevete a probarnos.</Typography>
+              <Typography variant="h6" sx={{ color: 'common.white' }}>Cocción artesanal al humo, 
+              envasada al vacío para que puedas disfrutar de las bondades y el realce del sabor que ofrece 
+              la cocción al humo cuando quieras, sin complicaciones.
+              </Typography>
             </motion.div>
 
             <motion.div variants={varFadeInRight}>

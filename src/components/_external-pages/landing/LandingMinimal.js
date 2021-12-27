@@ -10,17 +10,17 @@ const CARDS = [
   {
     icon: '/static/ahumados/foto2.jpeg',
     title: 'Costillar',
-    description: 'Delicioso costillar ahumado por 8 horas.'
+    description: 'Preparado con tiempo y cariño para lograr productos tiernos y sabrosos.'
   },
   {
     icon: '/static/ahumados/foto3.jpeg',
     title: 'Brisket',
-    description: 'Delicioso costillar ahumado por 8 horas.'
+    description: 'Prepardo con leña de roble, manzano y durazno de árboles.'
   },
   {
     icon: '/static/ahumados/foto4.jpeg',
     title: 'Pernil',
-    description: 'Delicioso costillar ahumado por 8 horas.'
+    description: 'Fuego de leña, humo y artesanía.'
   }
 ];
 
