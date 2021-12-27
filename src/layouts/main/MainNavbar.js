@@ -62,8 +62,8 @@ export default function MainNavbar() {
         >
           <Label 
           sx={{ 
-            ml: 8, 
-            paddingTop: '10px'
+            ml: 10, 
+            paddingTop: '13px'
             }}>
             <LogoI />
           </Label>
