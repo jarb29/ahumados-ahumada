@@ -82,7 +82,7 @@ export default function LandingHero() {
             </motion.div>
             <motion.div variants={varFadeInRight}>
               <Typography variant="h7" sx={{ color: 'common.white' }}>Cocción artesanal al humo, 
-              envasada al vacío para que puedas disfrutar de las bondades y el realce del sabor que esta ofrece, 
+              envasada al vacío para que puedas disfrutar de las bondades que esta ofrece, 
               en la comodidad de su casa y sin complicaciones. 
               </Typography>
             </motion.div>
