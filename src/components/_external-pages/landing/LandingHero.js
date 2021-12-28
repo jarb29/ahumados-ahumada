@@ -24,7 +24,7 @@ const RootStyle = styled(motion.div)(({ theme }) => ({
 }));
 
 const ContentStyle = styled((props) => <Stack spacing={5} {...props} />)(({ theme }) => ({
-  zIndex: 14,
+  zIndex: 10,
   maxWidth: 520,
   margin: 'auto',
   textAlign: 'center',
@@ -38,7 +38,7 @@ const ContentStyle = styled((props) => <Stack spacing={5} {...props} />)(({ them
 }));
 
 const HeroOverlayStyle = styled(motion.img)({
-  zIndex: 8.5,
+  zIndex: 8,
   width: '100%',
   height: '100%',
   objectFit: 'cover',
@@ -50,13 +50,13 @@ const HeroImgStyle = styled(motion.img)(({ theme }) => ({
   right: 0,
   bottom: 0,
   zIndex: 8,
-  width: '100%',
+  width: '70%',
   margin: 'auto',
   position: 'absolute',
   [theme.breakpoints.up('lg')]: {
-    right: '1%',
+    right: '8%',
     width: 'auto',
-    height: '100vh'
+    height: '48vh'
   }
 }));
 
