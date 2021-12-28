@@ -50,13 +50,13 @@ const HeroImgStyle = styled(motion.img)(({ theme }) => ({
   right: 0,
   bottom: 0,
   zIndex: 8,
-  width: '70%',
+  width: '100%',
   margin: 'auto',
   position: 'absolute',
   [theme.breakpoints.up('lg')]: {
-    right: '8%',
-    width: 'auto',
-    height: '48vh'
+    right: '0%',
+    width: '75%',
+    height: '100%'
   }
 }));
 
