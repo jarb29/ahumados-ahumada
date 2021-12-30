@@ -108,7 +108,7 @@ export default function LandingHero() {
               <motion.div variants={varFadeInRight}>
                 <Typography
                   component="span"
-                  variant="h5"
+                  variant="h6"
                   sx={{ color: "primary.main" }}
                 >
                   Disfruta del sabor en tu hogar.
