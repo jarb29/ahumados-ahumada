@@ -111,7 +111,6 @@ export default function LandingHero() {
                   variant="h5"
                   sx={{ color: "primary.main" }}
                 >
-                  <br/>
                   Disfruta del sabor en tu hogar.
                 </Typography>
               </motion.div>
