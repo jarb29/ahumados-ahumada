@@ -27,14 +27,14 @@ export const defaultValues = {
 export const FormSchema = Yup.object().shape({
   fullName: Yup.string()
     .required('Nombre es requerido')
-    .min(6, 'Minimo de 6 caracteres')
+    .min(3, 'Minimo de 3 caracteres')
     .max(30, 'Maximo 30 caracteres'),
   email: Yup.string().required('Email es requerido').email('email invalido'),
 
   draftEditor: Yup.mixed().test(
     'max text',
-    'Debe tener mas de 25 caracteres',
-    (value) => value && value.getCurrentContent().getPlainText('\u0001').length > 25
+    'Debe tener mas de 5 caracteres',
+    (value) => value && value.getCurrentContent().getPlainText('\u0001').length > 5
   )
 });
 
