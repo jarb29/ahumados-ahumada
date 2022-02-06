@@ -15,7 +15,7 @@ export default function LogoI({ sx }) {
 
   return (
 
-    <Box sx={{ width: 30, height: 60, ...sx }}>
+    <Box sx={{ width: 5, height: 60, ...sx }}>
         <LogoImage />
     </Box>
   );
