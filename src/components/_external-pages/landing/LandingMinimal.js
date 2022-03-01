@@ -12,20 +12,22 @@ const CARDS = [
     title: "Costillar",
     price: "$10.000 ",
     description:
-      "Preparado con tiempo y cariño para lograr productos tiernos y sabrosos. 500 grs aprox. ",
+      "Preparado con tiempo y cariño para lograr productos tiernos y sabrosos. 500 grs aprox.  ",
+    pricedescription: "500 grs aprox.",
   },
   {
     icon: "/static/ahumados/foto3.jpeg",
     title: "Brisket",
     price: "$5.000",
-    description:
-      "Preparado con leña de roble, manzano y durazno de árboles. 250 grs aprox. ",
+    description: "Preparado con leña de roble, manzano y durazno de árboles.  ",
+    pricedescription: "250 grs aprox.",
   },
   {
     icon: "/static/ahumados/foto4.jpeg",
     title: "Pernil",
     price: "$10.000 ",
-    description: "Fuego de leña, humo y artesanía. 1 und. ",
+    description: "Fuego de leña, humo y artesanía.  ",
+    pricedescription: "1 und.",
   },
 ];
 
@@ -139,9 +141,7 @@ export default function LandingMinimalHelps() {
                       }),
                     }}
                   />
-                  <Typography variant="h5">
-                    {card.title}
-                  </Typography>
+                  <Typography variant="h5">{card.title}</Typography>
                   <Typography variant="h5" paragraph>
                     {card.price}
                   </Typography>
@@ -149,6 +149,7 @@ export default function LandingMinimalHelps() {
                     sx={{ color: isLight ? "text.secondary" : "common.white" }}
                   >
                     {card.description}
+                    <b>{card.pricedescription}</b>
                   </Typography>
                 </CardStyle>
               </MotionInView>
