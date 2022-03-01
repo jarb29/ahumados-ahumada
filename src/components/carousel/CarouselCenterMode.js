@@ -15,9 +15,9 @@ import { CarouselControlsArrowsBasic2 } from './controls';
 // ----------------------------------------------------------------------
 
 let tit = ["Costillar", "Brisket", "Pernil"]
-const MOCK_CAROUSELS = [...Array(4)].map((_, index) => ({
+const MOCK_CAROUSELS = [...Array(7)].map((_, index) => ({
   id: mockData.id(index),
-  title: (index+1=== 1|index+1=== 4)? tit[0]:(index+1===2)? tit[1]:tit[2],
+  title: (index+1=== 1|index+1=== 4)? tit[0]:(index+1===2)? tit[1]:(index+1>=5)? tit[1]:tit[2],
   image: `/static/ahumada/foto${index + 1}.jpeg`,
   description: mockData.text.description(index)
 }));

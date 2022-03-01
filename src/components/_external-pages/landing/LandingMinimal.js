@@ -8,20 +8,24 @@ import { varFadeInUp, MotionInView, varFadeInDown } from '../../animate';
 
 const CARDS = [
   {
-    icon: '/static/ahumados/foto2.jpeg',
-    title: 'Costillar',
-    description: 'Preparado con tiempo y cariño para lograr productos tiernos y sabrosos.'
+    icon: "/static/ahumados/foto2.jpeg",
+    title: "Costillar",
+    price: "$10.000",
+    description:
+      "Preparado con tiempo y cariño para lograr productos tiernos y sabrosos.",
   },
   {
-    icon: '/static/ahumados/foto3.jpeg',
-    title: 'Brisket',
-    description: 'Prepardo con leña de roble, manzano y durazno de árboles.'
+    icon: "/static/ahumados/foto3.jpeg",
+    title: "Brisket",
+    price: "$5.000",
+    description: "Prepardo con leña de roble, manzano y durazno de árboles.",
   },
   {
-    icon: '/static/ahumados/foto4.jpeg',
-    title: 'Pernil',
-    description: 'Fuego de leña, humo y artesanía.'
-  }
+    icon: "/static/ahumados/foto4.jpeg",
+    title: "Pernil",
+    price: "$10.000",
+    description: "Fuego de leña, humo y artesanía.",
+  },
 ];
 
 const shadowIcon = (color) => `drop-shadow(2px 2px 2px ${alpha(color, 0.48)})`;
@@ -98,12 +102,16 @@ export default function LandingMinimalHelps() {
       <Container maxWidth="lg">
         <Box sx={{ mb: { xs: 10, md: 25 } }}>
           <MotionInView variants={varFadeInUp}>
-            <Typography component="p" variant="overline" sx={{ mb: 2, color: 'text.secondary', textAlign: 'center' }}>
+            <Typography
+              component="p"
+              variant="overline"
+              sx={{ mb: 2, color: "text.secondary", textAlign: "center" }}
+            >
               Ahumada
             </Typography>
           </MotionInView>
           <MotionInView variants={varFadeInDown}>
-            <Typography variant="h2" sx={{ textAlign: 'center' }}>
+            <Typography variant="h2" sx={{ textAlign: "center" }}>
               Nuestros Productos
             </Typography>
           </MotionInView>
@@ -113,23 +121,32 @@ export default function LandingMinimalHelps() {
           {CARDS.map((card, index) => (
             <Grid key={card.title} item xs={12} md={4}>
               <MotionInView variants={varFadeInUp}>
-                <CardStyle className={(index === 0 && 'cardLeft') || (index === 1 && 'cardCenter')}>
+                <CardStyle
+                  className={
+                    (index === 0 && "cardLeft") || (index === 1 && "cardCenter")
+                  }
+                >
                   <CardIconStyle
                     src={card.icon}
                     alt={card.title}
                     sx={{
                       ...(index === 0 && {
-                        filter: (theme) => shadowIcon(theme.palette.info.main)
+                        filter: (theme) => shadowIcon(theme.palette.info.main),
                       }),
                       ...(index === 1 && {
-                        filter: (theme) => shadowIcon(theme.palette.error.main)
-                      })
+                        filter: (theme) => shadowIcon(theme.palette.error.main),
+                      }),
                     }}
                   />
                   <Typography variant="h5" paragraph>
                     {card.title}
                   </Typography>
-                  <Typography sx={{ color: isLight ? 'text.secondary' : 'common.white' }}>
+                  <Typography variant="h5" paragraph>
+                    {card.price}
+                  </Typography>
+                  <Typography
+                    sx={{ color: isLight ? "text.secondary" : "common.white" }}
+                  >
                     {card.description}
                   </Typography>
                 </CardStyle>
