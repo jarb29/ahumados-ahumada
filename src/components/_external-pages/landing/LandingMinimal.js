@@ -12,20 +12,20 @@ const CARDS = [
     title: "Costillar",
     price: "$10.000 ",
     description:
-      "500 grs aprox. Preparado con tiempo y cariño para lograr productos tiernos y sabrosos.",
+      "Preparado con tiempo y cariño para lograr productos tiernos y sabrosos. 500 grs aprox. ",
   },
   {
     icon: "/static/ahumados/foto3.jpeg",
     title: "Brisket",
     price: "$5.000",
     description:
-      "250 grs aprox. Preparado con leña de roble, manzano y durazno de árboles.",
+      "Preparado con leña de roble, manzano y durazno de árboles. 250 grs aprox. ",
   },
   {
     icon: "/static/ahumados/foto4.jpeg",
     title: "Pernil",
     price: "$10.000 ",
-    description: "1 und. Fuego de leña, humo y artesanía.",
+    description: "Fuego de leña, humo y artesanía. 1 und. ",
   },
 ];
 
