@@ -12,7 +12,7 @@ const CARDS = [
     title: "Costillar",
     price: "$10.000 ",
     description:
-      "Preparado con tiempo y cariño para lograr productos tiernos y sabrosos. 500 grs aprox.  ",
+      "Preparado con tiempo y cariño para lograr productos tiernos y sabrosos. ",
     pricedescription: "500 grs aprox.",
   },
   {
