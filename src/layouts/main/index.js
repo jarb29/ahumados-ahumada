@@ -17,9 +17,9 @@ import {
   Tooltip,
 } from "@mui/material";
 
-import twitterFill from "@iconify/icons-eva/twitter-fill";
+// import twitterFill from "@iconify/icons-eva/twitter-fill";
 import facebookFill from "@iconify/icons-eva/facebook-fill";
-import linkedinFill from "@iconify/icons-eva/linkedin-fill";
+// import linkedinFill from "@iconify/icons-eva/linkedin-fill";
 import instagramFilled from "@iconify/icons-ant-design/instagram-filled";
 
 // ----------------------------------------------------------------------
