@@ -27,13 +27,13 @@ import instagramFilled from "@iconify/icons-ant-design/instagram-filled";
 const SOCIALS = [
   {
     name: "Facebook",
-    icon: <Icon icon={facebookFill} width={20} height={20} color="#1877F2" />,
+    icon: <Icon icon={facebookFill} width={40} height={40} color="#1877F2" />,
     link: "https://www.facebook.com/ahumadosAhumada/?ref=pages_you_manage",
   },
   {
     name: "Instagram",
     icon: (
-      <Icon icon={instagramFilled} width={20} height={20} color="#D7336D" />
+      <Icon icon={instagramFilled} width={40} height={40} color="#D7336D" />
     ),
     link: "https://www.instagram.com/ahumadosahumada/",
   },
