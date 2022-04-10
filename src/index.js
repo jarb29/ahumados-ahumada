@@ -41,6 +41,7 @@ import { AuthProvider } from './contexts/JWTContext';
 // import { AuthProvider } from './contexts/Auth0Context';
 
 //
+import MessengerCustomerChat from "react-messenger-customer-chat";
 import App from './App';
 
 // ----------------------------------------------------------------------
@@ -58,8 +59,9 @@ ReactDOM.render(
         </CollapseDrawerProvider>
       </SettingsProvider>
     </LocalizationProvider>
+    <MessengerCustomerChat pageId="103957645579023" appId="923678981635316" />
   </HelmetProvider>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
 
 // If you want your app to work offline and load faster, you can change
